@@ -1,0 +1,21 @@
+﻿<Window x:Class="_8_CuadrosTexto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_8_CuadrosTexto"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="82,66,0,0" TextWrapping="Wrap" Text="Nombre" VerticalAlignment="Top" FontSize="15"/>
+        <TextBlock HorizontalAlignment="Left" Margin="82,170,0,0" TextWrapping="Wrap" Text="Apellido" VerticalAlignment="Top" FontSize="15"/>
+        <TextBlock HorizontalAlignment="Left" Margin="82,267,0,0" TextWrapping="Wrap" Text="Edad" VerticalAlignment="Top" FontSize="15"/>
+        <TextBox x:Name="edadTextBox" HorizontalAlignment="Left" Margin="82,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="15" KeyDown="Edad_KeyDown"/>
+        <TextBox x:Name="apellidoTextBox" HorizontalAlignment="Left" Margin="82,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" FontSize="15" KeyDown="ApellidoTextBox_KeyDown"/>
+        <TextBox x:Name="nombreTextBox" HorizontalAlignment="Left" Margin="82,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="15" KeyDown="NombreTextBox_KeyDown"/>
+        <TextBlock x:Name="ayuda1TextBlock" HorizontalAlignment="Left" Margin="243,91,0,0" TextWrapping="Wrap" Text="Nombre del cliente" VerticalAlignment="Top" FontSize="15" Foreground="#FF5353B9" Visibility="Hidden"/>
+        <TextBlock x:Name="ayuda2TextBlock" HorizontalAlignment="Left" Margin="243,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="15" Foreground="#FF5353B9" Visibility="Hidden"><Run Language="es-es" Text="Apellido"/><Run Text=" del cliente"/></TextBlock>
+        <TextBlock x:Name="ayuda3TextBlock" HorizontalAlignment="Left" Margin="243,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="15" Foreground="#FFFF0101" Visibility="Hidden"><Run Language="es-es" Text="Edad no valida"/></TextBlock>
+
+    </Grid>
+</Window>
