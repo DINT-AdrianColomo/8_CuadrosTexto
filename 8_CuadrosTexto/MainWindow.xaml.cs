@@ -26,15 +26,14 @@ namespace _8_CuadrosTexto
         }
         private void Edad_KeyDown(object sender, KeyEventArgs e)
         {
-            int i;
-            if (e.Key == Key.F2 && !int.TryParse(edadTextBox.Text, out i))
+            if (e.Key == Key.F2 && !int.TryParse(edadTextBox.Text, out _))
             {
                 if(ayuda3TextBlock.Visibility == Visibility.Hidden)
                 {
                     ayuda3TextBlock.Visibility = Visibility.Visible;
                 }
             }
-            if(e.Key == Key.F2 && int.TryParse(edadTextBox.Text, out i))
+            if(e.Key == Key.F2 && int.TryParse(edadTextBox.Text, out _))
             {
                 if (ayuda3TextBlock.Visibility == Visibility.Visible)
                 {
